@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icons -->
+
+    <link
+
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+
+      rel="stylesheet"
+
+    />
+
+    <!-- css link -->
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Netflix Survey</title>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="logo">
+
+        <img src="logo.png" alt="Netflix" width="200px" />
+
+      </div>
+
+      <h3>Thank you for signing up to Netflix. Tell us more about yourself.</h3>
+
+      <form action="q" id="survey-form" method="get" name="form">
+
+        <div class="name">
+
+          <label class="block" for="name">Name</label>
+
+          <input
+
+            class="input-1"
+
+            type="text"
+
+            id="name"
+
+            required
+
+            placeholder="Enter Your Name"
+
+            minlength="3"
+
+          />
+
+        </div>
+
+
+
+        <div class="age">
+
+          <label class="block" for="age">Age</label>
+
+          <input class="input-1" type="number" id="age" required placeholder="Age" min="18" />
+
+        </div>
+
+        <div class="mail">
+
+          <label class="block" for="mail">E-mail</label>
+
+          <input
+
+          class="input-1"
+
+            type="mail"
+
+            id="mail"
+
+            required
+
+            placeholder="example@netflix.com"
+
+            pattern=".+@globex\.com"
+
+          />
+
+        </div>
+
+
+
+        <div class="content-type">
+
+          <label class="block" for="type">Content Type</label>
+
+          <select class="input-1" name="type" id="type">
+
+            <option value="movie">Movie</option>
+
+            <option value="series">Series</option>
+
+            <option value="documentary">Documentary</option>
+
+            <option value="biography">Biography</option>
+
+            <option value="netflix-original">Netflix Originals</option>
+
+          </select>
+
+        </div>
+
+             
+
+            <!-- input 2  -->
+
+
+
+        <div class="movie-type">
+
+          <p>Movie Type</p>
+
+
+
+          <div class="mtype">
+
+            <input type="checkbox" id="movie1" name="movie1" />
+
+            <label for="movie1">Comedy</label>
+
+          </div> 
+
+
+
+          <div class="mtype">
+
+            <input type="checkbox" id="movie2" name="movie2" />
+
+            <label for="movie2">Horror</label>
+
+          </div> 
+
+
+
+          <div class="mtype">
+
+            <input type="checkbox" id="movie3" name="movie3" />
+
+            <label for="movie3">Action</label>
+
+          </div> 
+
+
+
+          <div class="mtype">
+
+            <input type="checkbox" id="movie4" name="movie4" />
+
+            <label for="movie4">Romance</label>
+
+          </div> 
+
+
+
+        </div>
+
+        <div class="gender">
+
+          <p>Gender</p>
+
+
+
+          <div class="gndr">
+
+            <input type="radio" id="male" name="drone" value="male" />
+
+            <label for="male">Male</label>
+
+          </div> 
+
+
+
+          <div class="gndr">
+
+            <input type="radio" id="female" name="drone" value="female" />
+
+            <label for="female">Female</label>
+
+          </div> 
+
+
+
+          <div class="gndr"><input type="radio" id="other" name="drone" value="other" />
+
+            <label for="other">Other</label></div> 
+
+        </div>
+
+
+
+        <div class="feedback">
+
+          <label for="feedback">Feedback</label>
+
+          <textarea
+
+            name="feedback"
+
+            id="feedback"
+
+            cols="57"
+
+            rows="8"
+
+            placeholder="Enter Your Comment"
+
+          ></textarea>
+
+        </div>
+
+
+
+        <!-- btn -->
+
+
+
+        <div class="btn">
+
+          <input class="btn1" type="submit" value="Send" />
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </body>
+
+</html>
+
